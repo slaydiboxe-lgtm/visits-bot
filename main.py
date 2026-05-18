@@ -2,6 +2,9 @@ import discord
 from discord.ext import commands
 import aiohttp
 import os
+from dotenv import load_dotenv
+import asyncio
+from aiohttp import web
 
 TOKEN = os.getenv("TOKEN")
 
