@@ -66,8 +66,18 @@ async def visits(ctx, uid: str, region: str):
         value=data.get("likes", "0"),
         inline=False
     )
-
-    embed.set_footer(
+    
+    embed.add_field(
+        name="Success",
+        value=data.get("Success", "0"),
+        inline=False
+    )
+     embed.add_field(
+        name="Failed",
+        value=data.get("Failed", "0"),
+        inline=False
+    )
+         embed.set_footer(
         text="DEVELOPED BY DIBOXE LEGIT"
     )
 
